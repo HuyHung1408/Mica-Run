@@ -11,20 +11,22 @@ run.geometry('399x173')
 run.update()
 
 Ok = ttk.Button(run, text='OK').grid(row=4, column=2, ipadx=10, pady=10)
+Ok = ttk.Button(run, text='OK').grid(row=4, column=3, ipadx=10, pady=10)
+Ok = ttk.Button(run, text='OK').grid(row=4, column=4, ipadx=10, pady=10)
 
 opentext = ttk.Label(text='Open:').grid(row=3, column=1)
 
-input = ttk.Entry().grid(row=3, column=2, ipadx=100, pady=2)
+input = ttk.Entry().grid(row=3, column=2, columnspan=3, ipadx=100, pady=2)
 
 img = PhotoImage(file='Run icon.png')
 Runicon = Label(run, image=img).grid(row= 1, column =1, padx=8, pady=8)
-text = ttk.Label(text='Type the name of a program, folder, document, or Internet\nresource, and Windows will open it for you.', font=('Segoe UI Variable Display','10')).grid(row=1, column = 2, pady=16)
+text = ttk.Label(text='Type the name of a program, folder, document, or Internet\nresource, and Windows will open it for you.', font=('Segoe UI Variable Display','10')).grid(row=1, column = 2, columnspan=3, pady=16)
 
 #App size
 run.minsize(run.winfo_width(), run.winfo_height())
 x_cordinate = int((run.winfo_screenwidth() / 2) - (run.winfo_width() / 2))
 y_cordinate = int((run.winfo_screenheight() / 2) - (run.winfo_height() / 2))
-run.resizable(False, False)
+run.resizable(True, True)
 run.iconbitmap('Run icon.ico')
 
 #Theme for Tkinter
