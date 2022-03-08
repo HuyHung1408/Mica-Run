@@ -6,20 +6,20 @@ from ctypes import windll
 #App name
 run = Tk()
 run.title('Run')
-run.geometry('380x185')
+run.geometry('380x190')
 run.update()
 
-Ok = ttk.Button(run, text='OK').place(x = 130, y = 130, width = 80)
-Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 220, y = 130, width = 80)
-Browse = ttk.Button(run, text='Browse...').place(x = 310, y = 130, width = 80)
+Ok = ttk.Button(run, text='OK').place(x = 95, y = 140, width = 80)
+Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 140, width = 80)
+Browse = ttk.Button(run, text='Browse...').place(x = 275, y = 140, width = 80)
 
-opentext = ttk.Label(text='Open:').grid(row=3, column=1)
+opentext = ttk.Label(text='Open:').place(x=13, y=85)
 
-input = ttk.Entry().place(x=70, y=60, width=290)
+input = ttk.Combobox().place(x=60, y=80, width=295)
 
 img = PhotoImage(file='Run icon.png')
-Runicon = Label(run, image=img).grid(row= 1, column =1, padx=8, pady=8)
-text = ttk.Label(text='Type the name of a program, folder, document, or\nInternetresource, and Windows will open it for you.', font=('Segoe UI Variable Display','10')).grid(row=1, column = 2, columnspan=4, pady=16)
+Runicon = Label(run, image=img).place(x=10, y=18)
+text = ttk.Label(text='Type the name of a program, folder, document, or\nInternet resource, and Windows will open it for you.', font=('Segoe UI Variable Display','10')).place(x=60, y=20)
 
 #App size
 run.minsize(run.winfo_width(), run.winfo_height())
