@@ -4,7 +4,6 @@ from tkinter import *
 from win32mica import ApplyMica, MICAMODE
 from ctypes import windll
 from tkinter import filedialog as fd
-from tkinter.messagebox import showinfo
 
 #App name
 run = Tk()
@@ -18,6 +17,18 @@ run.tk.call("set_theme", "light")
 
 input = ttk.Combobox().place(x=60, y=80, width=295)
 
+def change_theme():
+    if  run.tk.call("ttk::style", "theme", "use") == "sun-valley-dark":
+        run.tk.call("set_theme", "light")
+        HWND=windll.user32.GetParent(run.winfo_id())
+        ApplyMica(HWND, ColorMode=MICAMODE.LIGHT)
+        run.update()
+    else:
+        run.tk.call("set_theme", "dark")
+        HWND=windll.user32.GetParent(run.winfo_id())
+        ApplyMica(HWND, ColorMode=MICAMODE.DARK)
+        run.update()
+
 run.wm_attributes('-transparentcolor', '#ab23ff')
 transparent = Label(run, text= "", bg= '#ab23ff').place(x = 0, y=130, height= 60, width = 380)
 
@@ -27,9 +38,9 @@ def select_file():
         initialdir='/',
         )
     input = StringVar()
-    input.insert(run, filename)
+    input.set(filename)
 
-Ok = ttk.Button(run, text='OK').place(x = 95, y = 143, width = 80)
+Ok = ttk.Button(run, text='OK', command=change_theme).place(x = 95, y = 143, width = 80)
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 143, width = 80)
 Browse = ttk.Button(run, text='Browse...', command=select_file).place(x = 275, y = 143, width = 80)
 
