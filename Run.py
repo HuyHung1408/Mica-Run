@@ -2,6 +2,8 @@ from tkinter import ttk
 from tkinter import *
 from win32mica import ApplyMica, MICAMODE
 from ctypes import windll
+from tkinter import filedialog as fd
+from tkinter.messagebox import showinfo
 
 #App name
 run = Tk()
@@ -9,13 +11,21 @@ run.title('Run')
 run.geometry('380x190')
 run.update()
 
-Ok = ttk.Button(run, text='OK').place(x = 95, y = 140, width = 80)
+input = ttk.Combobox().place(x=60, y=80, width=295)
+
+def select_file():
+    filename = fd.askopenfilename(
+        title='Open a file',
+        initialdir='/',
+        )
+    input = StringVar()
+    input.insert(run, text=filename)
+
+Ok = ttk.Button(run, text='OK', style='Accent.TButton').place(x = 95, y = 140, width = 80)
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 140, width = 80)
-Browse = ttk.Button(run, text='Browse...').place(x = 275, y = 140, width = 80)
+Browse = ttk.Button(run, text='Browse...', command=select_file).place(x = 275, y = 140, width = 80)
 
 opentext = ttk.Label(text='Open:').place(x=13, y=85)
-
-input = ttk.Combobox().place(x=60, y=80, width=295)
 
 img = PhotoImage(file='Run icon.png')
 Runicon = Label(run, image=img).place(x=10, y=18)
