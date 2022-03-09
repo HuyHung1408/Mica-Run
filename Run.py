@@ -19,7 +19,7 @@ def select_file():
         initialdir='/',
         )
     input = StringVar()
-    input.insert(run, text=filename)
+    input.insert(run, filename)
 
 Ok = ttk.Button(run, text='OK', style='Accent.TButton').place(x = 95, y = 140, width = 80)
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 140, width = 80)
