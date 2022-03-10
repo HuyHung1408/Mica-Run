@@ -21,7 +21,7 @@ transparent = Label(run, text= "", bg= '#ab23ff').place(x = 0, y=130, height= 60
 
 Ok = ttk.Button(run, text='OK').place(x = 95, y = 143, width = 80)
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 143, width = 80)
-Fullmica = ttk.Checkbutton(run, text='Full Mica',style="Toggle.TButton").place(x = 275, y = 143, width = 80)
+Fullmica = ttk.Button(run, text='Browse...').place(x = 275, y = 143, width = 80)
 
 opentext = ttk.Label(text='Open:').place(x=13, y=85)
 
