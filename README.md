@@ -6,10 +6,7 @@ Windows Run-but with Python and Sun-Valley. Just a small program made with Pytho
 
 You'll need Python installed!
 
-
-https://user-images.githubusercontent.com/86362423/158002451-11744ff4-0bd8-4b5c-844e-7702d70ea66e.mp4
-
-
+https://user-images.githubusercontent.com/86362423/158002484-e976a922-bf85-4d35-9372-0e990fd1ea92.mp4
 
 ![image](https://user-images.githubusercontent.com/86362423/158001467-a3fbea0b-d93b-4ae4-85ab-c73bac7c8309.png)
 
