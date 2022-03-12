@@ -1,7 +1,7 @@
 # Run
 
 ## About this project:
-Windows Run-but with Python and Sun-Valley. Just a small program made with Python base on [my concept](https://www.reddit.com/r/Windows_Redesign/comments/s8kgtm/quite_new_to_figma_so_i_just_create_a_simple/). It's not for daily-use ~~for now~~, just a concept
+Windows Run-but with Python and Sun-Valley. Just a small program made with Python base on [my concept](https://www.reddit.com/r/Windows_Redesign/comments/s8kgtm/quite_new_to_figma_so_i_just_create_a_simple/), Run also follow your system dark/light mode. It's not for daily-use ~~for now~~, just a concept
 <br>
 
 You'll need Python installed!
