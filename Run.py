@@ -3,6 +3,8 @@ from tkinter import *
 from win32mica import ApplyMica, MICAMODE
 from ctypes import windll
 import darkdetect
+from tkinter import filedialog
+import tkinter as tk
 
 #App name
 run = Tk()
@@ -10,18 +12,23 @@ run.title('Run')
 run.geometry('380x190')
 run.update()
 
+def browsefunc():
+    filename =filedialog.askopenfilename(filetypes=(("Programs","*.exe"),("All files","*.*")))
+    input.insert(tk.END, filename)
+
 #Theme for Tkinter
 run.tk.call("source", "sun-valley.tcl")
 run.tk.call("set_theme", "light")
 
-input = ttk.Combobox().place(x=60, y=80, width=295)
+input = ttk.Combobox()
+input.place(x=60, y=80, width=295)
 
 run.wm_attributes('-transparentcolor', '#ab23ff')
 transparent = Label(run, text= "", bg= '#ab23ff').place(x = 0, y=130, height= 60, width = 380)
 
 Ok = ttk.Button(run, text='OK').place(x = 95, y = 143, width = 80)
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 143, width = 80)
-Fullmica = ttk.Button(run, text='Browse...').place(x = 275, y = 143, width = 80)
+Fullmica = ttk.Button(run, text='Browse...', command=browsefunc).place(x = 275, y = 143, width = 80)
 
 opentext = ttk.Label(text='Open:').place(x=13, y=85)
 
