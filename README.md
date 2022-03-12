@@ -4,6 +4,13 @@
 Windows Run-but with Python and Sun-Valley. Just a small program made with Python base on [my concept](https://www.reddit.com/r/Windows_Redesign/comments/s8kgtm/quite_new_to_figma_so_i_just_create_a_simple/). It's not for daily-use ~~for now~~, just a concept
 <br>
 
+You'll need Python installed!
+
+
+https://user-images.githubusercontent.com/86362423/158002451-11744ff4-0bd8-4b5c-844e-7702d70ea66e.mp4
+
+
+
 ![image](https://user-images.githubusercontent.com/86362423/158001467-a3fbea0b-d93b-4ae4-85ab-c73bac7c8309.png)
 
 ![image](https://user-images.githubusercontent.com/86362423/158001488-135cadbd-3313-4dfd-a400-d88b7f94aba6.png)
