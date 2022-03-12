@@ -27,6 +27,7 @@ run.tk.call("set_theme", "light")
 
 input = ttk.Combobox()
 input.place(x=60, y=80, width=295)
+input.focus_set()
 
 run.wm_attributes('-transparentcolor', '#ab23ff')
 transparent = Label(run, text= "", bg= '#ab23ff').place(x = 0, y=130, height= 60, width = 380)
