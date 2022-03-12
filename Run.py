@@ -1,10 +1,10 @@
-from operator import setitem
 from tkinter import ttk
 from tkinter import *
 from win32mica import ApplyMica, MICAMODE
 from ctypes import windll
-from tkinter import filedialog as fd
-from tkinter.messagebox import showinfo
+import darkdetect
+from tkinter import filedialog
+import tkinter as tk
 
 #App name
 run = Tk()
@@ -12,26 +12,23 @@ run.title('Run')
 run.geometry('380x190')
 run.update()
 
+def browsefunc():
+    filename =filedialog.askopenfilename(filetypes=(("Programs","*.exe"),("All files","*.*")))
+    input.insert(tk.END, filename)
+
 #Theme for Tkinter
 run.tk.call("source", "sun-valley.tcl")
 run.tk.call("set_theme", "light")
 
-input = ttk.Combobox().place(x=60, y=80, width=295)
+input = ttk.Combobox()
+input.place(x=60, y=80, width=295)
 
 run.wm_attributes('-transparentcolor', '#ab23ff')
 transparent = Label(run, text= "", bg= '#ab23ff').place(x = 0, y=130, height= 60, width = 380)
 
-def select_file():
-    filename = fd.askopenfilename(
-        title='Open a file',
-        initialdir='/',
-        )
-    input = StringVar()
-    input.insert(run, filename)
-
 Ok = ttk.Button(run, text='OK').place(x = 95, y = 143, width = 80)
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 143, width = 80)
-Browse = ttk.Button(run, text='Browse...', command=select_file).place(x = 275, y = 143, width = 80)
+Browse = ttk.Button(run, text='Browse...', command=browsefunc).place(x = 275, y = 143, width = 80)
 
 opentext = ttk.Label(text='Open:').place(x=13, y=85)
 
@@ -46,8 +43,15 @@ y_cordinate = int((run.winfo_screenheight() / 2) - (run.winfo_height() / 2))
 run.resizable(False, False)
 run.iconbitmap('Run icon.ico')
 
-HWND=windll.user32.GetParent(run.winfo_id())
-ApplyMica(HWND, ColorMode=MICAMODE.LIGHT)
-run.update()
-
+if  darkdetect.isDark():
+            run.tk.call("set_theme", "dark")
+            HWND=windll.user32.GetParent(run.winfo_id())
+            ApplyMica(HWND, ColorMode=MICAMODE.DARK)
+            run.update()
+else:
+            run.tk.call("set_theme", "light")
+            HWND=windll.user32.GetParent(run.winfo_id())
+            ApplyMica(HWND, ColorMode=MICAMODE.LIGHT)
+            run.update()
+            
 run.mainloop()
