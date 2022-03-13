@@ -4,7 +4,6 @@ from ctypes import windll
 import darkdetect
 import tkinter as tk
 import os
-import sv_ttk
 
 #App name
 run = Tk()
@@ -21,7 +20,8 @@ def okbutton():
      os.startfile(input.get())
 
 #Theme for Tkinter
-sv_ttk.set_theme('light')
+run.tk.call("source", "sun-valley.tcl")
+run.tk.call("set_theme", "light")
 
 input = ttk.Combobox()
 input.place(x=60, y=80, width=295)
@@ -49,12 +49,12 @@ run.resizable(False, False)
 run.iconbitmap('Run icon.ico')
 
 if  darkdetect.isDark():
-            sv_ttk.set_theme('dark')
+            run.tk.call("set_theme", "dark")
             HWND=windll.user32.GetParent(run.winfo_id())
             ApplyMica(HWND, ColorMode=MICAMODE.DARK)
             run.update()
 else:
-            sv_ttk.set_theme('light')
+            run.tk.call("set_theme", "light")
             HWND=windll.user32.GetParent(run.winfo_id())
             ApplyMica(HWND, ColorMode=MICAMODE.LIGHT)
             run.update()
