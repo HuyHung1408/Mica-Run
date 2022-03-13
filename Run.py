@@ -9,7 +9,6 @@ import os
 run = Tk()
 run.title('Run')
 run.geometry('380x190')
-run.update()
 
 def browsefunc():
     filename =filedialog.askopenfilename(filetypes=(("Programs","*.exe"),("All files","*.*")))
