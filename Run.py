@@ -1,9 +1,7 @@
-from tkinter import ttk
-from tkinter import *
+from tkinter import Tk, Label, PhotoImage, filedialog, ttk
 from win32mica import ApplyMica, MICAMODE
 from ctypes import windll
 import darkdetect
-from tkinter import filedialog
 import tkinter as tk
 import os
 
