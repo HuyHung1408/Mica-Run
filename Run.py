@@ -30,7 +30,8 @@ input.focus_set()
 run.wm_attributes('-transparentcolor', '#ab23ff')
 transparent = Label(run, text= "", bg= '#ab23ff').place(x = 0, y=130, height= 60, width = 380)
 
-Ok = ttk.Button(run, text='OK', command=okbutton).place(x = 95, y = 143, width = 80)
+Ok = ttk.Button(run, text='OK', command=okbutton)
+Ok.place(x = 95, y = 143, width = 80)
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 143, width = 80)
 Browse = ttk.Button(run, text='Browse...', command=browsefunc).place(x = 275, y = 143, width = 80)
 
