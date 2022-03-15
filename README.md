@@ -15,7 +15,7 @@ Windows Run-but with Python and Sun-Valley. Just a small program made with Pytho
   - Browse function
   - Open web link
   - Most of Windows Run features
-  - Mica
+  - [Mica](https://github.com/martinet101/win32mica)
   - [Sun-Valley](https://github.com/rdbende/Sun-Valley-ttk-theme) 
 
 You'll need Python installed!
