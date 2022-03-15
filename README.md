@@ -23,3 +23,4 @@ You'll need Python installed!
 
 ## To-do list:
 - [ ] Add function to disable the "Ok" button if combobox is empty
+- [ ] Show message box when the path is invalid
