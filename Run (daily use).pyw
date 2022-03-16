@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, PhotoImage, filedialog, ttk, messagebox
+from tkinter import Tk, Label, PhotoImage, filedialog, ttk
 from win32mica import ApplyMica, MICAMODE
 from ctypes import windll
 import darkdetect
@@ -17,10 +17,8 @@ def browsefunc():
     input.insert(tk.END, filename)
     
 def okbutton():
-    try:
      os.startfile(input.get())
-    except:
-     messagebox.showerror(input.get(), 'Make sure you typed the name correctly, and then try again')
+
 #Theme for Tkinter
 sv_ttk.set_theme('light')
 
