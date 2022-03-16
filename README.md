@@ -16,7 +16,7 @@ Windows Run-but with Python and Sun-Valley. Just a small program made with Pytho
   - Open web link
   - Most of Windows Run features
   - [Mica](https://github.com/martinet101/win32mica)
-  - [Sun-Valley](https://github.com/rdbende/Sun-Valley-ttk-theme) 
+  - [Windows 11 design](https://github.com/rdbende/Sun-Valley-ttk-theme) 
 
 You'll need Python installed!
 ![Example2](https://user-images.githubusercontent.com/86362423/158045500-413133e4-6bbe-4402-b197-8da897c755e7.gif)
