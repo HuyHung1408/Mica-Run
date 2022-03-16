@@ -25,7 +25,7 @@ def okbutton():
 sv_ttk.set_theme('light')
 
 input = ttk.Combobox()
-input.place(x=60, y=80, width=295)
+input.place(x=60, y=79, width=295)
 input.focus_set()
 
 run.wm_attributes('-transparentcolor', '#ab23ff')
