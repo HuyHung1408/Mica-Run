@@ -20,7 +20,7 @@ def okbutton():
     try:
      os.startfile(input.get())
     except:
-     messagebox.showerror(input.get(), 'Make sure you typed the name correctly, and then try again')
+     messagebox.showerror(input.get(), 'Make sure you typed the name correctly, and then try again.')
 #Theme for Tkinter
 sv_ttk.set_theme('light')
 
