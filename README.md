@@ -21,13 +21,12 @@ Windows Run-but with Python and Sun-Valley. Just a small program made with Pytho
 You'll need Python installed!
 ![Example2](https://user-images.githubusercontent.com/86362423/158045500-413133e4-6bbe-4402-b197-8da897c755e7.gif)
 
+### Gallery:
 ![image](https://user-images.githubusercontent.com/86362423/158001467-a3fbea0b-d93b-4ae4-85ab-c73bac7c8309.png)
-![image](https://user-images.githubusercontent.com/86362423/158001488-135cadbd-3313-4dfd-a400-d88b7f94aba6.png)
-![image](https://user-images.githubusercontent.com/86362423/158001500-3e71d09d-7eb5-4b27-94bb-9a3e24d5f490.png)
-  
+![image](https://user-images.githubusercontent.com/86362423/158625134-144e2ec4-feff-42e4-9be6-133a51569071.png)
 ![image](https://user-images.githubusercontent.com/86362423/158614332-4798a5a7-d4a3-4889-822b-4978cc1f4ee4.png)
  >Dark mode and comparison (Rectify 11 theme)
 
 ## To-do list:
 - [ ] Add function to disable the "Ok" button if combobox is empty
-- [ ] Show message box when the path is invalid
+- [X] Show message box when the path is invalid
