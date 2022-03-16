@@ -25,8 +25,8 @@ You'll need Python installed!
 ![image](https://user-images.githubusercontent.com/86362423/158001488-135cadbd-3313-4dfd-a400-d88b7f94aba6.png)
 ![image](https://user-images.githubusercontent.com/86362423/158001500-3e71d09d-7eb5-4b27-94bb-9a3e24d5f490.png)
   
- ![Screenshot (113)](https://user-images.githubusercontent.com/86362423/158381618-7fde411f-549c-4435-9246-897cbb8daf50.png)
-  >Dark mode and comparison (Rectify 11 theme)
+![image](https://user-images.githubusercontent.com/86362423/158614332-4798a5a7-d4a3-4889-822b-4978cc1f4ee4.png)
+ >Dark mode and comparison (Rectify 11 theme)
 
 ## To-do list:
 - [ ] Add function to disable the "Ok" button if combobox is empty
