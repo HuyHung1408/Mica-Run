@@ -22,7 +22,6 @@ Windows Run-but with Python and Sun-Valley. Just a small program made with Pytho
 >You'll need Python installed!
 ### Gallery:
 ![image](https://user-images.githubusercontent.com/86362423/158001467-a3fbea0b-d93b-4ae4-85ab-c73bac7c8309.png)
-![New video](https://user-images.githubusercontent.com/86362423/158814220-2e2f62ce-2983-4def-9e79-2b7ab5447d95.gif)
 ![image](https://user-images.githubusercontent.com/86362423/158627189-8dcff561-c132-4c9e-a978-1075e52defa6.png)
 ![image](https://user-images.githubusercontent.com/86362423/158614332-4798a5a7-d4a3-4889-822b-4978cc1f4ee4.png)
  >Dark mode and comparison (Rectify 11 theme)
