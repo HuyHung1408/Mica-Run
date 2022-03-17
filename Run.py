@@ -10,17 +10,19 @@ import sv_ttk
 run = Tk()
 run.title('Run')
 run.geometry('380x190')
+run.iconbitmap('Run icon.ico')
 
 def browsefunc():
     filename =filedialog.askopenfilename(filetypes=(("Programs","*.exe"),("All files","*.*")))
     input.set("")
     input.insert(tk.END, filename)
     
-def okbutton():
+def okbutton(event=None):
     try:
      os.startfile(input.get())
     except:
      messagebox.showerror(input.get(), 'Make sure you typed the name correctly, and then try again.')
+
 #Theme for Tkinter
 sv_ttk.set_theme('light')
 
@@ -33,6 +35,8 @@ transparent = Label(run, text= "", bg= '#ab23ff').place(x = 0, y=130, height= 60
 
 Ok = ttk.Button(run, text='OK', command=okbutton)
 Ok.place(x = 95, y = 143, width = 80)
+run.bind('<Return>', okbutton)
+
 Cancel = ttk.Button(run, text='Cancel', command=run.destroy).place(x = 185, y = 143, width = 80)
 Browse = ttk.Button(run, text='Browse...', command=browsefunc).place(x = 275, y = 143, width = 80)
 
@@ -47,8 +51,6 @@ run.minsize(run.winfo_width(), run.winfo_height())
 x_cordinate = int((run.winfo_screenwidth() / 2) - (run.winfo_width() / 2))
 y_cordinate = int((run.winfo_screenheight() / 2) - (run.winfo_height() / 2))
 run.resizable(False, False)
-run.geometry("+{}+{}".format(x_cordinate - 662, y_cordinate - -90))
-run.iconbitmap('Run icon.ico')
 
 if  darkdetect.isDark():
             sv_ttk.set_theme('dark')
