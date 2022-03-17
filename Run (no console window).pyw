@@ -47,9 +47,6 @@ Runicon = Label(run, image=img).place(x=10, y=18)
 text = ttk.Label(text='Type the name of a program, folder, document, or\nInternet resource, and Windows will open it for you.', font=('Segoe UI Variable Display','10')).place(x=60, y=20)
 
 #App size
-run.minsize(run.winfo_width(), run.winfo_height())
-x_cordinate = int((run.winfo_screenwidth() / 2) - (run.winfo_width() / 2))
-y_cordinate = int((run.winfo_screenheight() / 2) - (run.winfo_height() / 2))
 run.resizable(False, False)
 
 if  darkdetect.isDark():
