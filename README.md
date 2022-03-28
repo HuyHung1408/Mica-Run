@@ -27,5 +27,5 @@ Windows Run-but with Python and Sun-Valley. Just a small program made with Pytho
  >Dark mode and comparison (Rectify 11 theme)
 
 ## To-do list:
-- [ ] Add function to disable the "Ok" button if combobox is empty
+- [ ] Add function to disable the "Ok" button if combo box is empty
 - [X] Show message box when the path is invalid
