@@ -14,7 +14,7 @@ Windows Run-but with Python and Sun-Valley. Just a small program made with Pytho
   - Follow system dark/light mode
   - Browse function
   - Open web link
-  - Most of Windows Run features
+  - Launch apps (winword, temp, prefetch, taskmgr.exe, explorer.exe,..)
   - [Mica](https://github.com/martinet101/win32mica)
   - [Windows 11 design](https://github.com/rdbende/Sun-Valley-ttk-theme) 
 
