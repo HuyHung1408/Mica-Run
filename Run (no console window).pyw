@@ -9,7 +9,6 @@ import sv_ttk
 #App name
 run = Tk()
 run.resizable(False, False)
-sv_ttk.set_theme('light')
 run.title('Run')
 run.geometry('380x190')
 run.iconbitmap('Run icon.ico')
@@ -23,7 +22,6 @@ else:
             HWND=windll.user32.GetParent(run.winfo_id())
             ApplyMica(HWND, ColorMode=MICAMODE.LIGHT)
 
-#App size
 def browsefunc():
     filename =filedialog.askopenfilename(filetypes=(("Programs","*.exe"),("All files","*.*")))
     input.set("")
@@ -56,6 +54,4 @@ img = PhotoImage(file='Run icon.png')
 Runicon = Label(run, image=img).place(x=10, y=18)
 text = ttk.Label(text='Type the name of a program, folder, document, or\nInternet resource, and Windows will open it for you.', font=('Segoe UI Variable Display','10')).place(x=60, y=20)
 
-
-            
 run.mainloop()
