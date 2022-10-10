@@ -1,19 +1,19 @@
   
 # Mica-Run
 
->Windows Run-but with Python and Sun-Valley
+>Windows Run but with Python and Sun-Valley
 
 <div align="left">
   
 <br>
 
 ## About this project:
-A proof-of-concept program that mimics Windows Run but being made with Python and added a taste of Sun-Valley design. Just a small program made with Python-based on [my Figma concept](https://www.reddit.com/r/Windows_Redesign/comments/s8kgtm/quite_new_to_figma_so_i_just_create_a_simple/), Run also follow your system dark/light mode. It's not for daily-use ~~for now~~, just a concept
+A proof-of-concept program that mimics Windows Run but is made with Python and a taste of Sun-Valley design. Just a small program based on [my Figma concept](https://www.reddit.com/r/Windows_Redesign/comments/s8kgtm/quite_new_to_figma_so_i_just_create_a_simple/), Run. It also follows your system dark/light mode. It's not intended for daily-use ~~for now~~, just a concept.
 <br>
 ### Features:
   - Follow system dark/light mode
   - Browse function
-  - Open web link
+  - Open web links
   - Launch apps (winword, temp, prefetch, taskmgr.exe, explorer.exe,..)
   - [Mica](https://github.com/martinet101/win32mica)
   - [Windows 11 design](https://github.com/rdbende/Sun-Valley-ttk-theme) 
